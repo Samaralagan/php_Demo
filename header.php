@@ -41,6 +41,3 @@ session_start(); // Start session at the top before anything else
             </div>
         </nav>
     </header>
-</body>
-
-</html>

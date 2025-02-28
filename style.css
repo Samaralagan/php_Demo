@@ -60,6 +60,12 @@ form {
     gap: 10px;
     align-items: center;
 }
+.form1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
 
 input {
     padding: 8px;
@@ -93,16 +99,29 @@ a[href="signup.php"]:hover {
 }
 
 /* Signup Form Styles */
+.signup-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
 .signup-form {
     background: white;
-    padding: 20px;
+    padding: 25px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    margin: 20px auto;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+    text-align: center;
+    margin-left: 30%;
+}
+
+.signup-form h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
 .signup-form input {
@@ -110,6 +129,7 @@ a[href="signup.php"]:hover {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 .signup-form button {
@@ -120,9 +140,29 @@ a[href="signup.php"]:hover {
     color: white;
     cursor: pointer;
     border-radius: 5px;
+    font-size: 16px;
     transition: 0.3s;
 }
 
 .signup-form button:hover {
     background: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .signup-form-container {
+        height: auto;
+        padding: 20px;
+    }
 }
